@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic Navbar & Audios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        section {
+            padding: 20px;
+        }
+        audio {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
 </head>
-	<body>
-		
-		<nav>
-			<ul>
-			  <li><a href="#audio1">Audio
-1</a></li>
-			<li><a href="#audio2">Audio
-2</a></li>
-			<li><a href="#audio3">Audio
-3</a></li>
-			</ul>
-		</nav>
-		<h1> 3 Random Audios</h1>
-		<p id="audio1">Track 1:</p>
-        <audio controls>
-            <source 
-src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-       </audio>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#audio1">Audio 1</a></li>
+                <li><a href="#audio2">Audio 2</a></li>
+                <li><a href="#audio3">Audio 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>3 Random Audios</h1>
+        <section id="audio1">
+            <h2>Track 1</h2>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-    <p id="audio2">Track 2:</p>
-    <audio controls>
-        <source 
-src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-        </audio>
+        <section id="audio2">
+            <h2>Track 2</h2>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-    <p id="audio3">Track 3:</p>
-    <audio controls>
-        <source 
-src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
-        </audio>
+        <section id="audio3">
+            <h2>Track 3</h2>
+            <audio controls>
+                <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
 </body>
 </html>
+
     
 
   
